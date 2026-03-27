@@ -308,13 +308,13 @@ h1,h2{font-family:'Noto Serif JP',serif}
   .case-visual{height:160px}
 }
 @media(max-width:640px){
-  /* ① 背景 - 白ベースに暗いオーバーレイで写真を抑える */
-  .hero-right-overlay{background:linear-gradient(to bottom,rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,.7) 100%)}
+  /* ① 背景 - 写真を薄く見せる */
+  .hero-right-overlay{background:linear-gradient(to bottom,rgba(255,255,255,.92) 0%,rgba(255,255,255,.75) 60%,rgba(255,255,255,.4) 100%)}
 
-  /* ⑥ 余白 */
+  /* ⑥ 余白・縦バランス */
   .sec{padding:48px 20px}
   .hero{padding:0}
-  .hero-left{padding:20px 24px 16px;min-height:auto;justify-content:flex-start}
+  .hero-left{padding:56px 24px 48px;min-height:80vh;justify-content:center}
 
   /* 非表示 */
   .hero-eyebrow{display:none}
