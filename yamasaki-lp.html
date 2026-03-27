@@ -308,39 +308,61 @@ h1,h2{font-family:'Noto Serif JP',serif}
   .case-visual{height:160px}
 }
 @media(max-width:640px){
-  .hero-right-overlay{background:linear-gradient(to bottom,rgba(255,255,255,.98) 0%,rgba(255,255,255,.92) 65%,rgba(255,255,255,.6) 100%)}
+  /* ① 背景 - 白ベースに暗いオーバーレイで写真を抑える */
+  .hero-right-overlay{background:linear-gradient(to bottom,rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,.7) 100%)}
+
+  /* ⑥ 余白 */
   .sec{padding:48px 20px}
   .hero{padding:0}
-  .hero-left{padding:40px 24px;min-height:85vh;justify-content:center}
+  .hero-left{padding:20px 24px 16px;min-height:auto;justify-content:flex-start}
+
+  /* 非表示 */
   .hero-eyebrow{display:none}
-  .hero h1{font-size:24px;line-height:1.35}
-  .hero h1 .sub-heading{font-size:14px;margin-top:10px}
   .hero-benefits{display:none}
-  .hero-btns{flex-direction:column;gap:10px;margin-bottom:16px}
-  .btn-cta{width:100%;justify-content:center;padding:16px 20px;font-size:15px}
-  .btn-ghost{display:none}
   .hero-cta-note{display:none}
-  .hero-stats{margin-top:24px;padding-top:20px}
-  .hero-stat-num{font-size:22px}
-  .hero-stat-label{font-size:9px}
-  .hero-stat{padding-right:16px;margin-right:16px}
+  .btn-ghost{display:none}
+
+  /* ② 見出し */
+  .hero h1{font-size:26px;line-height:1.3}
+  .hero h1 .gold{color:var(--gold)}
+
+  /* ③ サブコピー */
+  .hero h1 .sub-heading{font-size:14px;margin-top:8px;line-height:1.5}
+
+  /* ④ CTAボタン - 見出し直下・100%・高さ確保 */
+  .hero-btns{flex-direction:column;gap:0;margin-bottom:0;margin-top:16px}
+  .btn-cta{width:100%;justify-content:center;padding:16px 20px;font-size:15px;min-height:52px}
+
+  /* ⑤ 実績数値 - CTAの下にコンパクト横並び */
+  .hero-stats{margin-top:20px;padding-top:16px;border-top:1px solid rgba(0,0,0,.07)}
+  .hero-stat-num{font-size:20px}
+  .hero-stat-label{font-size:9px;margin-top:3px}
+  .hero-stat{padding-right:12px;margin-right:12px}
+
+  /* ⑦ ヘッダーCTA */
+  .hcta{font-size:11px;padding:7px 12px}
+
+  /* trust bar */
   .trust-inner{justify-content:flex-start;flex-wrap:wrap;overflow-x:visible}
   .trust-item{padding:10px 14px;font-size:10px;flex-shrink:0;border-right:none;border-bottom:1px solid rgba(255,255,255,.1);width:50%}
   .trust-item:nth-child(odd){border-right:1px solid rgba(255,255,255,.1)}
   .trust-item:last-child{border-bottom:none}
-  .trust-item:nth-last-child(2):nth-child(odd){border-bottom:none}
+  .trust-item:nth-child(5){display:none}
+
+  /* その他 */
   .cta{padding:48px 20px}
+  .cta h2{font-size:22px;line-height:1.5}
+  .cta-desc{font-size:13px}
   .form-sec{padding:48px 20px}
   .footer{padding:40px 20px 20px}
   .header{padding:0 20px}
+  .hnav{display:none}
   .prob-grid,.voice-grid,.cta-cards,.safety-grid,.footer-inner{grid-template-columns:1fr}
   .stat-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:1fr}
   .stat-grid .rv{padding:20px 14px !important;display:flex !important;flex-direction:column !important;align-items:center !important;justify-content:center !important}
   .stat-grid .rv div:first-child{font-size:28px !important}
   .stat-grid .rv div:first-child span{font-size:14px !important;vertical-align:middle}
   .prod-grid{grid-template-columns:1fr 1fr}
-  .hnav{display:none}
-  .hcta{font-size:11px;padding:8px 14px}
   .flow-row{flex-direction:column}
   .flow-arr{display:none}
   .float-divider,.float-tel-wrap{display:none}
@@ -348,6 +370,11 @@ h1,h2{font-family:'Noto Serif JP',serif}
   .float-btn{padding:14px 32px;font-size:14px;flex:1;justify-content:center}
   .form-box{padding:28px 20px}
   .company-visual{height:200px}
+  .case-visual{display:none}
+  .carousel-nav{margin-top:16px;gap:20px}
+  .carousel-btn{width:48px;height:48px;border-width:2px}
+  .carousel-dot{width:10px;height:10px}
+  .carousel-dot.active{width:28px}
   .case-card{padding:24px 20px}
 }
 </style>
@@ -546,7 +573,7 @@ h1,h2{font-family:'Noto Serif JP',serif}
         <div style="font-size:11px;color:rgba(255,255,255,.6);margin-top:8px;line-height:1.5">国内自社工場製造<br>品質管理一貫</div>
       </div>
       <div class="rv d4" style="background:rgba(255,255,255,.06);border:3px solid var(--gold);border-radius:10px;padding:28px 20px;text-align:center">
-        <div style="font-family:Inter,sans-serif;font-size:44px;font-weight:700;color:#fff;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-.02em;margin-bottom:4px">全省庁<span style="font-size:20px;vertical-align:middle">統一</span></div>
+        <div style="font-family:'Noto Sans JP',sans-serif;font-size:28px;font-weight:700;color:#fff;line-height:1.2;margin-bottom:4px">全省庁統一<br><span style="font-size:18px;font-weight:500">資格取得済み</span></div>
         <div style="font-size:11px;color:rgba(255,255,255,.6);margin-top:8px;line-height:1.5">統一資格取得済み<br>入札対応可能</div>
       </div>
     </div>
