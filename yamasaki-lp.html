@@ -96,19 +96,19 @@ h1,h2{font-family:'Noto Serif JP',serif}
 .hero-cta-note{font-size:11px;color:var(--text-sub);margin-top:8px;letter-spacing:.02em}
 /* Badge label */
 .hero-badge-label{font-size:9px;font-weight:700;color:rgba(255,255,255,.5);letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255,.12)}
-.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--border);margin-top:40px;padding-top:28px;gap:0}
-.hero-stat{text-align:left;padding-right:24px;border-right:1px solid rgba(0,0,0,.1);margin-right:24px}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(0,0,0,.08);margin-top:36px;padding-top:24px;gap:0}
+.hero-stat{text-align:left;padding-right:20px;border-right:1px solid rgba(0,0,0,.08);margin-right:20px}
 .hero-stat:last-child{border-right:none;margin-right:0;padding-right:0}
-.hero-stat-num{font-family:'Inter','Noto Serif JP',serif;font-size:28px;font-weight:700;color:var(--forest);line-height:1;letter-spacing:-.02em}
-.hero-stat-label{font-size:10px;color:var(--text-sub);margin-top:5px;line-height:1.5;letter-spacing:.03em}
+.hero-stat-num{font-family:'Inter','Noto Serif JP',serif;font-size:26px;font-weight:700;color:var(--forest);line-height:1;letter-spacing:-.02em}
+.hero-stat-label{font-size:10px;color:var(--text-sub);margin-top:6px;line-height:1.5;letter-spacing:.02em}
 .hero-badge{position:absolute;z-index:2;bottom:32px;right:40px;background:rgba(27,94,66,.82);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.2);border-radius:var(--r8);padding:14px 18px;display:flex;flex-direction:column;gap:6px}
 .hero-badge-row{display:flex;align-items:center;gap:8px;font-size:11px;color:rgba(255,255,255,.9);font-weight:500;letter-spacing:.04em}
 .hero-badge-row svg{opacity:.75;flex-shrink:0}
 
 /* ===== TRUST BAR ===== */
 .trust{background:var(--forest-dark);padding:0;border-bottom:2px solid var(--gold)}
-.trust-inner{max-width:1040px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:stretch;justify-content:center}
-.trust-item{display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,.95);font-weight:500;padding:16px 24px;border-right:1px solid rgba(255,255,255,.15);letter-spacing:.04em;white-space:nowrap}
+.trust-inner{max-width:1200px;margin:0 auto;display:flex;flex-wrap:nowrap;align-items:stretch;justify-content:center}
+.trust-item{display:flex;align-items:center;gap:6px;font-size:11px;color:rgba(255,255,255,.82);font-weight:500;padding:13px 14px;border-right:1px solid rgba(255,255,255,.1);letter-spacing:.02em;white-space:nowrap}
 .trust-item:last-child{border-right:none}
 .trust-item-dot{width:7px;height:7px;border-radius:50%;background:var(--gold);flex-shrink:0}
 
@@ -172,19 +172,20 @@ h1,h2{font-family:'Noto Serif JP',serif}
 .carousel-dot{width:7px;height:7px;border-radius:50%;background:var(--border);cursor:pointer;transition:all .25s}
 .carousel-dot.active{background:var(--forest);width:20px;border-radius:4px}
 .prod-card{border:1px solid var(--border);border-radius:var(--r12);overflow:hidden;background:var(--white);transition:box-shadow .22s,transform .22s,border-color .22s}
-.prod-card:hover{box-shadow:var(--sh-lg);transform:translateY(-4px);border-color:var(--gold)}
-.prod-img{background:var(--bg-warm);height:140px;display:flex;align-items:center;justify-content:center;position:relative}
+.prod-card:hover{box-shadow:var(--sh-lg);transform:translateY(-3px);border-color:var(--forest-sub)}
+.prod-img{background:var(--bg-warm);height:160px;display:flex;align-items:center;justify-content:center;position:relative}
 .prod-img::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--border)}
-.prod-body{padding:16px}
-.prod-tag{display:inline-block;background:var(--bg);color:var(--text-sub);font-size:9px;font-weight:500;padding:2px 8px;border-radius:var(--r4);margin-bottom:8px;letter-spacing:.08em;border:1px solid var(--border)}
-.prod-name{font-size:12px;font-weight:700;color:var(--text);margin-bottom:6px;line-height:1.45}
+.prod-body{padding:20px}
+.prod-tag{display:inline-block;background:transparent;color:var(--text-sub);font-size:9px;font-weight:500;padding:0;margin-bottom:6px;letter-spacing:.1em;text-transform:uppercase;border:none}
+.prod-name{font-size:13px;font-weight:700;color:var(--text);margin-bottom:6px;line-height:1.45}
 .prod-desc{font-size:11px;color:var(--text-sub);line-height:1.65}
-.prod-price{font-size:14px;font-weight:700;color:var(--forest-dark);margin-top:10px}
+.prod-price{font-size:14px;font-weight:700;color:var(--forest-dark);margin-top:12px;padding-top:12px;border-top:1px solid var(--border-light)}
 .prod-price span{font-size:10px;font-weight:400;color:var(--text-sub)}
 
 /* ===== SAFETY ===== */
 .safety{background:var(--forest-pale);border-top:1px solid var(--border)}
 .safety-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:32px}
 .safety-item{background:var(--white);border-radius:var(--r12);padding:26px 18px;text-align:center;border:1px solid var(--border);transition:box-shadow .2s}
 .safety-item:hover{box-shadow:var(--sh-md)}
 .safety-icon{width:50px;height:50px;background:var(--forest-pale);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;border:1.5px solid var(--border)}
@@ -307,29 +308,39 @@ h1,h2{font-family:'Noto Serif JP',serif}
   .case-visual{height:160px}
 }
 @media(max-width:640px){
-  .sec{padding:56px 20px}
+  .sec{padding:48px 20px}
   .hero{padding:0}
-  .hero-left{padding:48px 20px 40px;min-height:auto}
-  .hero-right-overlay{background:linear-gradient(to bottom,rgba(255,255,255,.96) 0%,rgba(255,255,255,.82) 55%,rgba(255,255,255,.3) 100%)}
-  .cta{padding:56px 20px}
-  .form-sec{padding:56px 20px}
+  .hero-left{padding:44px 24px 36px;min-height:auto}
+  .hero-eyebrow{display:none}
+  .hero h1{font-size:24px;line-height:1.35}
+  .hero h1 .sub-heading{font-size:14px;margin-top:10px}
+  .hero-benefits{display:none}
+  .hero-btns{flex-direction:column;gap:10px;margin-bottom:16px}
+  .btn-cta{width:100%;justify-content:center;padding:16px 20px;font-size:15px}
+  .btn-ghost{display:none}
+  .hero-cta-note{display:none}
+  .hero-stats{margin-top:24px;padding-top:20px}
+  .hero-stat-num{font-size:22px}
+  .hero-stat-label{font-size:9px}
+  .hero-stat{padding-right:16px;margin-right:16px}
+  .trust-inner{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap}
+  .trust-item{padding:12px 16px;font-size:10px;white-space:nowrap;flex-shrink:0}
+  .cta{padding:48px 20px}
+  .form-sec{padding:48px 20px}
   .footer{padding:40px 20px 20px}
   .header{padding:0 20px}
   .prob-grid,.voice-grid,.cta-cards,.safety-grid,.footer-inner{grid-template-columns:1fr}
-  .prod-grid{grid-template-columns:1fr}
+  .stat-grid{grid-template-columns:repeat(2,1fr)}
+  .prod-grid{grid-template-columns:1fr 1fr}
   .hnav{display:none}
   .hcta{font-size:11px;padding:8px 14px}
   .flow-row{flex-direction:column}
   .flow-arr{display:none}
-  .trust-item{padding:11px 16px;font-size:10px}
   .float-divider,.float-tel-wrap{display:none}
   .float-bar{padding:10px 16px}
-  .float-btn{padding:13px 28px;font-size:14px}
+  .float-btn{padding:14px 32px;font-size:14px;flex:1;justify-content:center}
   .form-box{padding:28px 20px}
-  .hero-stats{grid-template-columns:repeat(3,1fr)}
   .company-visual{height:200px}
-  .hero h1{font-size:22px}
-  .hero h1 .sub-heading{font-size:13px}
   .case-card{padding:24px 20px}
 }
 </style>
@@ -421,13 +432,11 @@ h1,h2{font-family:'Noto Serif JP',serif}
 <!-- TRUST BAR -->
 <div class="trust">
   <div class="trust-inner">
+    <div class="trust-item"><span class="trust-item-dot"></span>国産ベビーベッド製造メーカー</div>
     <div class="trust-item"><span class="trust-item-dot"></span>PSC・SGマーク適合</div>
-    <div class="trust-item"><span class="trust-item-dot"></span>国内自社工場製造（Made in JAPAN）</div>
-    <div class="trust-item"><span class="trust-item-dot"></span>入札・見積書・仕様書対応</div>
-    <div class="trust-item"><span class="trust-item-dot"></span>官公庁・自治体の納品実績あり</div>
-    <div class="trust-item"><span class="trust-item-dot"></span>5年間の品質保証・アフターサポート</div>
-    <div class="trust-item"><span class="trust-item-dot"></span>全省庁統一資格取得済み</div>
-    <div class="trust-item"><span class="trust-item-dot"></span>通産省登録工場・SG登録工場</div>
+    <div class="trust-item"><span class="trust-item-dot"></span>全省庁統一資格・入札対応</div>
+    <div class="trust-item"><span class="trust-item-dot"></span>見積書・仕様書を即発行</div>
+    <div class="trust-item"><span class="trust-item-dot"></span>5年品質保証</div>
   </div>
 </div>
 
@@ -516,7 +525,7 @@ h1,h2{font-family:'Noto Serif JP',serif}
   <div class="sec-inner">
     <div class="sec-eyebrow rv" style="color:rgba(255,255,255,.4)">TRACK RECORD</div>
     <h2 class="sec-title rv" style="color:#fff">公共機関に<span style="color:var(--gold)">選ばれ続けている</span>理由</h2>
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:32px">
+    <div class="stat-grid rv">
       <div class="rv d1" style="background:rgba(255,255,255,.06);border:3px solid var(--gold);border-radius:10px;padding:28px 20px;text-align:center">
         <div style="font-family:Inter,sans-serif;font-size:44px;font-weight:700;color:#fff;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-.02em;margin-bottom:4px">500+</div>
         <div style="font-size:11px;color:rgba(255,255,255,.6);margin-top:8px;line-height:1.5">施設・機関への<br>納品実績</div>
